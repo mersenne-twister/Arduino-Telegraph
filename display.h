@@ -5,7 +5,4 @@
 
 //display class
 
-//will include conditional compilation based on an #define in main.h dictating whether there is a
-//backpack for the lcd
-
 #endif //DISPLAY_161004122023_H
