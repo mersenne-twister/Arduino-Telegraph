@@ -23,10 +23,10 @@ void setup()
 
 void loop()
 {
-	char keyPressed{keypad.getKey};
+	char pressedKey{keypad.getKey};
 	
-	if (key)
-		Serial.println(key);
+	if (pressedKey)
+		Serial.println(pressedKey);
 }
 
 
