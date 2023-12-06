@@ -8,7 +8,7 @@ byte rowPins[ROWS]{9, 8, 7, 6}; //byte array can't be const
 byte colPins[COLS]{5, 4, 3, 2};
 
 char constexpr keys[ROWS][COLS]{
-{'1', '2', '3', '/'},1
+{'1', '2', '3', '/'},
 {'4', '5', '6', '*'},
 {'7', '8', '9', '-'},
 {'_', '0', '.', '+'} //underscore represents negative instead of subtraction, and will still print out '-'
