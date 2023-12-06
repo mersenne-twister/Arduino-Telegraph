@@ -25,8 +25,11 @@ void setup()
 
 void loop()
 {
+  static int i{0};
 	if (digitalRead(11)) {
-		Serial.println("Button pressed");
+		Serial.print("Button pressed");
+    Serial.println(i);
+    ++i;
 		delay(50);
 	}
 
