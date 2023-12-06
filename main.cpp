@@ -23,7 +23,7 @@ void setup()
 
 void loop()
 {
-	if (digitalRead(11, 1))
+	if (digitalRead(11))
 		Serial.println("Button pressed");
 
 
