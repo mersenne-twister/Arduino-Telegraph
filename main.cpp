@@ -25,12 +25,18 @@ void setup()
 
 void loop()
 {
-  static int i{0};
+	static int i{0};
+
 	if (digitalRead(11)) {
-		Serial.print("Button pressed");
-    Serial.println(i);
-    ++i;
+		digitalWrite(13, 1);
 		delay(50);
+	} else {
+		digitalWrite(13, 0);
+	}
+
+	if (digitalRead(12)) {
+		Serial.print("Input detected");
+		Serial.println(i);
 	}
 
 
@@ -40,6 +46,7 @@ void loop()
 	if (pressedKey)
 		;
 		//Serial.println(pressedKey);
+	++i;
 }
 
 
