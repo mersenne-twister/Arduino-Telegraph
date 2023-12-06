@@ -19,12 +19,16 @@ Keypad keypad{Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS)};
 void setup()
 {
 	Serial.begin(9600);
+
+	pinMode(11, INPUT);
 }
 
 void loop()
 {
-	if (digitalRead(11))
+	if (digitalRead(11)) {
 		Serial.println("Button pressed");
+		delay(50);
+	}
 
 
 
