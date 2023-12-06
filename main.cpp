@@ -31,6 +31,7 @@ void loop()
 	char pressedKey{keypad.getKey()};
 	
 	if (pressedKey)
+		;
 		//Serial.println(pressedKey);
 }
 
