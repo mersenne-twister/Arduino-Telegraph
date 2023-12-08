@@ -25,28 +25,29 @@ void setup()
 
 void loop()
 {
-	static int i{0};
+	Serial.println(A0);
+	// static int i{0};
 
-	if (digitalRead(11)) {
-		digitalWrite(13, 1);
-		delay(50);
-	} else {
-		digitalWrite(13, 0);
-	}
+	// if (digitalRead(11)) {
+	// 	digitalWrite(13, 1);
+	// 	delay(50);
+	// } else {
+	// 	digitalWrite(13, 0);
+	// }
 
-	if (digitalRead(12)) {
-		Serial.print("Input detected");
-		Serial.println(i);
-	}
+	// if (digitalRead(12)) {
+	// 	Serial.print("Input detected");
+	// 	Serial.println(i);
+	// }
 
 
 
-	char pressedKey{keypad.getKey()};
+	// char pressedKey{keypad.getKey()};
 	
-	if (pressedKey)
-		;
-		//Serial.println(pressedKey);
-	++i;
+	// if (pressedKey)
+	// 	;
+	// 	//Serial.println(pressedKey);
+	// ++i;
 }
 
 
