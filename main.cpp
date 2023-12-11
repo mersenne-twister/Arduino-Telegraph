@@ -25,7 +25,7 @@ void setup()
 
 void loop()
 {
-	Serial.println(A0);
+	Serial.println(digitalRead(A0));
 	// static int i{0};
 
 	// if (digitalRead(11)) {
