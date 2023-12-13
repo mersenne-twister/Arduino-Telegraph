@@ -20,7 +20,18 @@ void setup()
 void loop()
 {
     if (digitalRead(button)) {
-        digitalWrite(led, 1);
+        digitalWrite(out, 1);
+        Serial.println("button pressed");
         delay(50);
+    } else {
+        digitalWrite(out, 0);
     }
+    
+    if (digitalRead(in)) {
+        digitalWrite(led, 1);
+        Serial.println("input detected");
+    } else {
+        digitalWrite(led, 0);
+    }
+    
 }
