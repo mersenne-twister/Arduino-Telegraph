@@ -29,11 +29,11 @@ void loop()
     
     if (digitalRead(in)) {
         digitalWrite(led, 1);
-        digitalWrite(buzzer, 1);
+        tone(buzzer, 1175);
         Serial.println("input detected");
     } else {
         digitalWrite(led, 0);
-        digitalWrite(buzzer, 0);
+        noTone(buzzer);
     }
     
 }
