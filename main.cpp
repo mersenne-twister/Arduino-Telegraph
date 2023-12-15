@@ -2,8 +2,7 @@
 
 int constexpr buzzer{4};
 int constexpr led{3};
-int constexpr bu
-tton{2};
+int constexpr button{2};
 int constexpr in{5};
 int constexpr out{6};
 
